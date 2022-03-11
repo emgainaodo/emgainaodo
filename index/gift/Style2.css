@@ -1,0 +1,35 @@
+﻿
+.container {
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.btn-container {
+    position: relative;
+    text-align: center;
+}
+
+.btn {
+    height: 3rem;
+    width: 17rem;
+    background:#ff0000;
+    border: #B31C31 solid 0.125rem;
+    border-radius: 0.625rem;
+    color: #39386E;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+    .btn:hover {
+        opacity: 0.6
+    }
+

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="">
+<head>
+    <meta charset="utf-8" />
+    <title>Happy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./img/CILKGax.png" />
+    <!-- Tiêu đề của trang ảnh kĩ niệm -->
+    <title>Phú Hải Và Các Idol</title>
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/Style.css" />
+</head>
+<body class="page__main">
+    <div class="buttons">
+        <!-- Chữ ở menu bạn có thể sửa lại theo ý của bạn -->
+        <a href="./gift/gift.html" class="btn btn-bir">❤️️❤️️Sinh nhật❤️️❤️️</a>
+        <a href="./card/card.html" class="btn btn-timeline">❤️️❤️️Lời Nhắn ❤️️❤️️</a>
+        <a href="./nguoiban/nguoiban.html" class="btn btn-gallery">❤️️❤️️Kỷ Niệm Của Chúng Ta❤️️❤️️</a>
+    </div>
+    <!--Hiệu ứng pháo hoa-->
+    <div class="container">
+        <div class="pyro">
+            <div class="before">
+            </div>
+            <div class="after">
+            </div>
+            <div class="container">
+                <!-- 2. Dòng chữ Happy Birthday-->
+            </div>
+        </div>
+    </div>
+    <!-- 2. Phần ảnh của người bạn mún chúc -->
+    <div class="avatar">
+        <!-- 3. Avatar  -->
+        <img src="./img/avt.PNG" alt="" class="avatar__img" onclick="showMessage()" />
+        <!-- 4. Tên  -->
+        <h1 class="avatar1"> <a href="https://www.facebook.com/profile.php?id=100015331996614">❤️️Hải Nguyễn❤️️</h1>
+    </div>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+        function showMessage() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Chia Buồn",
+
+                text: " ❤️️❤️️❤️️E muốn gửi tới A tình cảm yêu thương nhất từ sâu thẳm trong trái tim E. Với E, Anh là tất cả, tài sản vô giá của cuộc đời E.E luôn chúc anh thành công trong sự nghiệp, đặc biệt là trên con đường bắn cá, chẵn lẻ-tài xỉu. E yêu A nhiều, chỉ mình A thôi!❤️️❤️️❤️️",
+                button: {
+                    text: "❤️️❤️️❤️️❤️️",
+                },
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- 3. Phần nhạc -->
+    <audio id="player" autoplay loop>
+        <source src="./music/music_music.mp3" type="audiomp3" />
+    </audio>
+</body>
+</html>
